@@ -31,5 +31,5 @@ echo "In student-submission"
 javac -cp $CP *.java
 echo "Compiled"
 
-java -cp $CP org.junit.runner.JUnitCore  ListTests
+java -cp $CP org.junit.runner.JUnitCore  TestListExamples
 echo "Ran"
