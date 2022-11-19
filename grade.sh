@@ -54,20 +54,20 @@ fi
 TOTALTESTS=2
 
 # Remove results.txt if it exists already
-if [[ -s results.txt ]]
-then
-        rm results.txt
-fi
+# if [[ -s results.txt ]]
+# then
+#        rm results.txt
+# fi
 
 java -cp $CP org.junit.runner.JUnitCore TestListExamples > results.txt
 
 echo "Ran Junit Tests"
 
 # Remove testResults.txt if it exists already
-if [[ -s testResults.txt ]]
-then
-        rm testResults.txt
-fi
+# if [[ -s testResults.txt ]]
+# then
+#        rm testResults.txt
+# fi
 
 # sed -n '10,13p' results.txt > testResults.txt
 awk 'NR>=11 && NR<=13' results.txt > testResults.txt
